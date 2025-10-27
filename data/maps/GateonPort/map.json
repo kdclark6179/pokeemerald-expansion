@@ -1,0 +1,20 @@
+{
+  "id": "MAP_GATEON_PORT",
+  "name": "GateonPort",
+  "layout": "LAYOUT_GATEON_PORT",
+  "music": "MUS_RG_CINNABAR",
+  "region_map_section": "MAPSEC_INDIGO_PLATEAU",
+  "requires_flash": true,
+  "weather": "WEATHER_SUNNY_CLOUDS",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

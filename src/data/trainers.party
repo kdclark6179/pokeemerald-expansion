@@ -2124,8 +2124,23 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon @ Nugget
-Level: 7
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Ralts @ Nugget
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Feebas (M) @ Nugget  
+Ability: Swift Swim  
+Level: 5  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Shiny: Yes  
+Hidden Power: Ground  
+- Ice Beam  
+- Confuse Ray  
+- Hidden Power [Ground]  
+- Rain Dance
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -4836,7 +4851,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Makuhita
-Level: 18
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
 - Bulk Up  
 - Sand Attack  
@@ -4844,7 +4859,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 
 Meditite  
-Level: 20  
+Level: 18
 IVs: 14 HP / 0 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe  
 - Confusion  
 - Light Screen  
@@ -4852,7 +4867,7 @@ IVs: 14 HP / 0 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Swagger
 
 Breloom @ Sitrus Berry    
-Level: 23  
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe  
 - Mega Drain  
 - Mach Punch  
@@ -4869,37 +4884,41 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Voltorb
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
+Electrike  
+Ability: Static  
+Level: 23
+EVs: 100 HP / 100 Atk / 100 Spe  
+- Tackle  
+- Howl  
+- Thunder Wave  
 - Shock Wave
 
-Electrike
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
+Pikachu (M) @ Light Ball  
+Ability: Static  
+Level: 25  
+EVs: 75 HP / 125 Atk / 100 SpA / 200 Spe  
+- Volt Tackle  
+- Thunder Wave  
+- Shock Wave  
 - Quick Attack
-- Howl
 
-Magneton
-Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+Magneton @ Sitrus Berry  
+Ability: Sturdy  
+Level: 26  
+EVs: 100 HP / 200 Def / 200 SpD   
+- Shock Wave  
+- Thunder Wave  
+- Supersonic  
+- Iron Defense
 
-Manectric @ Sitrus Berry
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Manectric @ Leftovers  
+Ability: Static  
+Level: 27
+EVs: 252 Atk / 252 SpA / 4 Spe  
+- Thunder Wave  
+- Shock Wave  
+- Iron Tail  
 - Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -5966,11 +5985,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon
-Level: 5
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seedot
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSH ===
@@ -12980,8 +12999,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Magikarp
-Level: 9
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Feebas
+Level: 10
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Carvanha
+Level: 10
+IVs: 0 HP / 2 Atk / 0 Def / 6 SpA / 0 SpD / 1 Spe
 
 === TRAINER_HAILEY ===
 Name: HAILEY

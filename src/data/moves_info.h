@@ -798,33 +798,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_ROLLING_KICK] =
-    {
-        .name = COMPOUND_STRING("Rolling Kick"),
-        .description = COMPOUND_STRING(
-            "A fast kick delivered from\n"
-            "a rapid spin. May flinch."),
-        .effect = EFFECT_HIT,
-        .power = 60,
-        .type = TYPE_FIGHTING,
-        .accuracy = 85,
-        .pp = 15,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
-        .makesContact = TRUE,
-        .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
-        }),
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
-        .contestCategory = CONTEST_CATEGORY_COOL,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RollingKick,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_ROLLING_KICK] =
+    //{
+      //  .name = COMPOUND_STRING("Rolling Kick"),
+      //  .description = COMPOUND_STRING(
+      //      "A fast kick delivered from\n"
+      //      "a rapid spin. May flinch."),
+      //  .effect = EFFECT_HIT,
+      //  .power = 60,
+      //  .type = TYPE_FIGHTING,
+      //  .accuracy = 85,
+      //  .pp = 15,
+      //  .target = MOVE_TARGET_SELECTED,
+      //  .priority = 0,
+      //  .category = DAMAGE_CATEGORY_PHYSICAL,
+      //  .makesContact = TRUE,
+      //  .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
+      //  .additionalEffects = ADDITIONAL_EFFECTS({
+        //    .moveEffect = MOVE_EFFECT_FLINCH,
+        //    .chance = 30,
+        //}),
+      //  .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+      //  .contestCategory = CONTEST_CATEGORY_COOL,
+      //  .contestComboStarterId = 0,
+      //  .contestComboMoves = {0},
+      //  .battleAnimScript = gBattleAnimMove_RollingKick,
+      //  .validApprenticeMove = TRUE,
+   // },
 
     [MOVE_SAND_ATTACK] =
     {
@@ -3970,27 +3970,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_PSYWAVE] =
-    {
-        .name = COMPOUND_STRING("Psywave"),
-        .description = COMPOUND_STRING(
-            "Attacks with a psychic\n"
-            "wave of varying intensity."),
-        .effect = EFFECT_PSYWAVE,
-        .power = 1,
-        .type = TYPE_PSYCHIC,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
-        .pp = 15,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
-        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
-        .contestCategory = CONTEST_CATEGORY_SMART,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_CALM_MIND},
-        .battleAnimScript = gBattleAnimMove_Psywave,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_PSYWAVE] =
+    //{
+      //  .name = COMPOUND_STRING("Psywave"),
+      //  .description = COMPOUND_STRING(
+      //      "Attacks with a psychic\n"
+      //      "wave of varying intensity."),
+      //  .effect = EFFECT_PSYWAVE,
+      //  .power = 1,
+      //  .type = TYPE_PSYCHIC,
+      //  .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
+      //  .pp = 15,
+      //  .target = MOVE_TARGET_SELECTED,
+      //  .priority = 0,
+      //  .category = DAMAGE_CATEGORY_SPECIAL,
+      //  .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
+      //  .contestCategory = CONTEST_CATEGORY_SMART,
+      //  .contestComboStarterId = 0,
+      //  .contestComboMoves = {COMBO_STARTER_CALM_MIND},
+      //  .battleAnimScript = gBattleAnimMove_Psywave,
+      //  .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_SPLASH] =
     {
@@ -7203,31 +7203,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_ROLE_PLAY] =
-    {
-        .name = COMPOUND_STRING("Role Play"),
-        .description = COMPOUND_STRING(
-            "Mimics the target and\n"
-            "copies its Ability."),
-        .effect = EFFECT_ROLE_PLAY,
-        .power = 0,
-        .type = TYPE_PSYCHIC,
-        .accuracy = 0,
-        .pp = 10,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
-        .ignoresProtect = TRUE,
-        .ignoresSubstitute = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RolePlay,
-        .validApprenticeMove = TRUE,
-    },
+    //[MOVE_ROLE_PLAY] =
+    //{
+     //   .name = COMPOUND_STRING("Role Play"),
+     //   .description = COMPOUND_STRING(
+     //       "Mimics the target and\n"
+     //       "copies its Ability."),
+     //   .effect = EFFECT_ROLE_PLAY,
+     //   .power = 0,
+     //   .type = TYPE_PSYCHIC,
+     //   .accuracy = 0,
+     //   .pp = 10,
+     //   .target = MOVE_TARGET_SELECTED,
+     //   .priority = 0,
+     //   .category = DAMAGE_CATEGORY_STATUS,
+     //   .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
+     //   .ignoresProtect = TRUE,
+     //   .ignoresSubstitute = TRUE,
+     //   .mirrorMoveBanned = TRUE,
+     //   .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
+     //   .contestCategory = CONTEST_CATEGORY_CUTE,
+     //   .contestComboStarterId = 0,
+     //   .contestComboMoves = {0},
+     //   .battleAnimScript = gBattleAnimMove_RolePlay,
+     //   .validApprenticeMove = TRUE,
+    //},
 
     [MOVE_WISH] =
     {
@@ -7764,35 +7764,35 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_TAIL_GLOW] =
-    {
-        .name = COMPOUND_STRING("Tail Glow"),
-        .description = COMPOUND_STRING(
-        #if B_UPDATED_MOVE_DATA >= GEN_5
-            "Flash light that drastically\n"
-        #else
-            "Flashes a light that sharply\n"
-        #endif
-            "raises Sp. Atk."),
-        .effect = B_UPDATED_MOVE_DATA >= GEN_5 ? EFFECT_SPECIAL_ATTACK_UP_3 : EFFECT_SPECIAL_ATTACK_UP_2,
-        .power = 0,
-        .type = TYPE_BUG,
-        .accuracy = 0,
-        .pp = 20,
-        .target = MOVE_TARGET_USER,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_RESET_STATS },
-        .snatchAffected = TRUE,
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
-        .contestCategory = CONTEST_CATEGORY_BEAUTY,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_TailGlow,
-        .validApprenticeMove = TRUE,
-    },
+   // [MOVE_TAIL_GLOW] =
+   // {
+     //   .name = COMPOUND_STRING("Tail Glow"),
+     //   .description = COMPOUND_STRING(
+     //   #if B_UPDATED_MOVE_DATA >= GEN_5
+     //       "Flash light that drastically\n"
+     //   #else
+     //       "Flashes a light that sharply\n"
+     //   #endif
+     //       "raises Sp. Atk."),
+     //   .effect = B_UPDATED_MOVE_DATA >= GEN_5 ? EFFECT_SPECIAL_ATTACK_UP_3 : EFFECT_SPECIAL_ATTACK_UP_2,
+     //   .power = 0,
+     //   .type = TYPE_BUG,
+     //   .accuracy = 0,
+     //   .pp = 20,
+     //   .target = MOVE_TARGET_USER,
+     //   .priority = 0,
+     //   .category = DAMAGE_CATEGORY_STATUS,
+     //   .zMove = { .effect = Z_EFFECT_RESET_STATS },
+     //   .snatchAffected = TRUE,
+     //   .ignoresProtect = TRUE,
+     //   .mirrorMoveBanned = TRUE,
+     //   .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+     //   .contestCategory = CONTEST_CATEGORY_BEAUTY,
+     //   .contestComboStarterId = 0,
+     //   .contestComboMoves = {0},
+     //   .battleAnimScript = gBattleAnimMove_TailGlow,
+     //   .validApprenticeMove = TRUE,
+    // },
 
     [MOVE_LUSTER_PURGE] =
     {

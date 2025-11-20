@@ -465,18 +465,18 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_FAIRY_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_FAIRY,
     },
-    [TYPE_STELLAR] =
-    {
-        .name = _("Stellar"),
-        .generic = _("a STELLAR move"),
-        .palette = 15,
-        .zMove = MOVE_BREAKNECK_BLITZ,
-        .maxMove = MOVE_MAX_STRIKE,
-        .teraTypeRGBValue = RGB(10, 18, 27),
-        .paletteTMHM = gItemIconPalette_NormalTMHM, // failsafe
-        .useSecondTypeIconPalette = FALSE,
-        .isSpecialCaseType = TRUE,
-        .isHiddenPowerType = FALSE,
+   // [TYPE_STELLAR] =
+   // {
+     //   .name = _("Stellar"),
+     //   .generic = _("a STELLAR move"),
+     //   .palette = 15,
+     //   .zMove = MOVE_BREAKNECK_BLITZ,
+     //   .maxMove = MOVE_MAX_STRIKE,
+     //   .teraTypeRGBValue = RGB(10, 18, 27),
+     //   .paletteTMHM = gItemIconPalette_NormalTMHM, // failsafe
+     //   .useSecondTypeIconPalette = FALSE,
+     //   .isSpecialCaseType = TRUE,
+     //   .isHiddenPowerType = FALSE,
         // .teraShard = ITEM_STELLAR_TERA_SHARD,
-    },
+    //},
 };

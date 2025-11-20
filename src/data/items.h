@@ -28,29 +28,29 @@ static const u8 sMaxReviveDesc[]      = _("Revives a fainted\n"
                                           "Pokémon with all\n"
                                           "its HP.");
 
-static const u8 sHealthFeatherDesc[]  = _("An item that raises\n"
-                                          "the base HP of\n"
-                                          "a Pokémon.");
+//static const u8 sHealthFeatherDesc[]  = _("An item that raises\n"
+//                                          "the base HP of\n"
+//                                          "a Pokémon.");
 
-static const u8 sMuscleFeatherDesc[]  = _("An item that raises\n"
-                                          "the base Attack of\n"
-                                          "a Pokémon.");
+//static const u8 sMuscleFeatherDesc[]  = _("An item that raises\n"
+//                                          "the base Attack of\n"
+//                                          "a Pokémon.");
 
-static const u8 sResistFeatherDesc[]  = _("An item that raises\n"
-                                          "the base Defense\n"
-                                          "of a Pokémon.");
+//static const u8 sResistFeatherDesc[]  = _("An item that raises\n"
+//                                          "the base Defense\n"
+//                                          "of a Pokémon.");
 
-static const u8 sGeniusFeatherDesc[]  = _("An item that raises\n"
-                                          "the base Sp. Atk.\n"
-                                          "of a Pokémon.");
+//static const u8 sGeniusFeatherDesc[]  = _("An item that raises\n"
+//                                          "the base Sp. Atk.\n"
+//                                          "of a Pokémon.");
 
-static const u8 sCleverFeatherDesc[]  = _("An item that raises\n"
-                                          "the base Sp. Def.\n"
-                                          "of a Pokémon.");
+//static const u8 sCleverFeatherDesc[]  = _("An item that raises\n"
+//                                          "the base Sp. Def.\n"
+//                                          "of a Pokémon.");
 
-static const u8 sSwiftFeatherDesc[]   = _("An item that raises\n"
-                                          "the base Speed of\n"
-                                          "a Pokémon.");
+//static const u8 sSwiftFeatherDesc[]   = _("An item that raises\n"
+//                                          "the base Speed of\n"
+//                                          "a Pokémon.");
 
 static const u8 sBigMushroomDesc[]    = _("A rare mushroom\n"
                                           "that would sell at a\n"

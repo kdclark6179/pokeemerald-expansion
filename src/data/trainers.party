@@ -2124,7 +2124,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Zigzagoon @ Nugget
-Level: 10
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Ralts @ Nugget
@@ -2136,10 +2136,9 @@ Ability: Swift Swim
 Level: 5  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Shiny: Yes  
-Hidden Power: Ground  
 - Ice Beam  
 - Confuse Ray  
-- Hidden Power [Ground]  
+- Water Pulse  
 - Rain Dance
 
 === TRAINER_DAPHNE ===

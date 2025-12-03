@@ -1433,89 +1433,89 @@ const struct Item gItemsInfo[] =
 
 // EV Feathers
 
-    [ITEM_HEALTH_FEATHER] =
-    {
-        .name = _("Health Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sHealthFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_HpFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_HealthFeather,
-        .iconPalette = gItemIconPalette_HealthFeather,
-    },
+    //[ITEM_HEALTH_FEATHER] =
+    //{
+      //  .name = _("Health Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sHealthFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_HpFeather,
+      //  .flingPower = 20,
+      //  .iconPic = gItemIcon_HealthFeather,
+      //  .iconPalette = gItemIconPalette_HealthFeather,
+    //},
 
-    [ITEM_MUSCLE_FEATHER] =
-    {
-        .name = _("Muscle Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sMuscleFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_AtkFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_MuscleFeather,
-        .iconPalette = gItemIconPalette_MuscleFeather,
-    },
+   // [ITEM_MUSCLE_FEATHER] =
+    //{
+      //  .name = _("Muscle Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sMuscleFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_AtkFeather,
+      //  .flingPower = 20,
+      //  .iconPic = gItemIcon_MuscleFeather,
+      //  .iconPalette = gItemIconPalette_MuscleFeather,
+    //},
 
-    [ITEM_RESIST_FEATHER] =
-    {
-        .name = _("Resist Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sResistFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_DefFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_ResistFeather,
-        .iconPalette = gItemIconPalette_ResistFeather,
-    },
+   // [ITEM_RESIST_FEATHER] =
+    //{
+      //  .name = _("Resist Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sResistFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_DefFeather,
+      //  .flingPower = 20,
+      //  .iconPic = gItemIcon_ResistFeather,
+      //  .iconPalette = gItemIconPalette_ResistFeather,
+    //},
 
-    [ITEM_GENIUS_FEATHER] =
-    {
-        .name = _("Genius Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sGeniusFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpatkFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_GeniusFeather,
-        .iconPalette = gItemIconPalette_GeniusFeather,
-    },
+   // [ITEM_GENIUS_FEATHER] =
+    //{
+      //  .name = _("Genius Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sGeniusFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+       // .effect = gItemEffect_SpatkFeather,
+       // .flingPower = 20,
+      //  .iconPic = gItemIcon_GeniusFeather,
+      //  .iconPalette = gItemIconPalette_GeniusFeather,
+    //},
 
-    [ITEM_CLEVER_FEATHER] =
-    {
-        .name = _("Clever Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sCleverFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpdefFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_CleverFeather,
-        .iconPalette = gItemIconPalette_CleverFeather,
-    },
+    //[ITEM_CLEVER_FEATHER] =
+    //{
+      //  .name = _("Clever Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sCleverFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_SpdefFeather,
+      //  .flingPower = 20,
+      //  .iconPic = gItemIcon_CleverFeather,
+      //  .iconPalette = gItemIconPalette_CleverFeather,
+    //},
 
-    [ITEM_SWIFT_FEATHER] =
-    {
-        .name = _("Swift Feather"),
-        .price = (I_PRICE >= GEN_7) ? 300 : 3000,
-        .description = sSwiftFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpeedFeather,
-        .flingPower = 20,
-        .iconPic = gItemIcon_SwiftFeather,
-        .iconPalette = gItemIconPalette_SwiftFeather,
-    },
+    //[ITEM_SWIFT_FEATHER] =
+    //{
+     //   .name = _("Swift Feather"),
+      //  .price = (I_PRICE >= GEN_7) ? 300 : 3000,
+      //  .description = sSwiftFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_SpeedFeather,
+      //  .flingPower = 20,
+      //  .iconPic = gItemIcon_SwiftFeather,
+      //  .iconPalette = gItemIconPalette_SwiftFeather,
+    //},
 
 // Ability Modifiers
 
@@ -13770,113 +13770,113 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_HearthflameMask,
     },
 
-    [ITEM_HEALTH_MOCHI] =
-    {
-        .name = _("Health Mochi"),
-        .pluralName = _("Health Mochi"),
-        .price = 500,
-        .description = sHealthFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_HpMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_HealthMochi,
-    },
+    //[ITEM_HEALTH_MOCHI] =
+    //{
+      //  .name = _("Health Mochi"),
+      //  .pluralName = _("Health Mochi"),
+      //  .price = 500,
+      //  .description = sHealthFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_HpMochi,
+      //  .flingPower = 30,
+      //  .iconPic = gItemIcon_Mochi,
+      //  .iconPalette = gItemIconPalette_HealthMochi,
+    //},
 
-    [ITEM_MUSCLE_MOCHI] =
-    {
-        .name = _("Muscle Mochi"),
-        .pluralName = _("Muscle Mochi"),
-        .price = 500,
-        .description = sMuscleFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_AtkMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_MuscleMochi,
-    },
+    //[ITEM_MUSCLE_MOCHI] =
+    //{
+      //  .name = _("Muscle Mochi"),
+      //  .pluralName = _("Muscle Mochi"),
+      //  .price = 500,
+      //  .description = sMuscleFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_AtkMochi,
+      //  .flingPower = 30,
+       // .iconPic = gItemIcon_Mochi,
+      //  .iconPalette = gItemIconPalette_MuscleMochi,
+    //},
 
-    [ITEM_RESIST_MOCHI] =
-    {
-        .name = _("Resist Mochi"),
-        .pluralName = _("Resist Mochi"),
-        .price = 500,
-        .description = sResistFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_DefMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_ResistMochi,
-    },
+    //[ITEM_RESIST_MOCHI] =
+    //{
+      //  .name = _("Resist Mochi"),
+      //  .pluralName = _("Resist Mochi"),
+      //  .price = 500,
+      //  .description = sResistFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_DefMochi,
+      //  .flingPower = 30,
+      //  .iconPic = gItemIcon_Mochi,
+      //  .iconPalette = gItemIconPalette_ResistMochi,
+    //},
 
-    [ITEM_GENIUS_MOCHI] =
-    {
-        .name = _("Genius Mochi"),
-        .pluralName = _("Genius Mochi"),
-        .price = 500,
-        .description = sGeniusFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpatkMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_GeniusMochi,
-    },
+   // [ITEM_GENIUS_MOCHI] =
+    //{
+      //  .name = _("Genius Mochi"),
+      //  .pluralName = _("Genius Mochi"),
+      //  .price = 500,
+      //  .description = sGeniusFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_SpatkMochi,
+      //  .flingPower = 30,
+       // .iconPic = gItemIcon_Mochi,
+       // .iconPalette = gItemIconPalette_GeniusMochi,
+    //},
 
-    [ITEM_CLEVER_MOCHI] =
-    {
-        .name = _("Clever Mochi"),
-        .pluralName = _("Clever Mochi"),
-        .price = 500,
-        .description = sCleverFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpdefMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_CleverMochi,
-    },
+   // [ITEM_CLEVER_MOCHI] =
+    //{
+      //  .name = _("Clever Mochi"),
+      //  .pluralName = _("Clever Mochi"),
+      //  .price = 500,
+      //  .description = sCleverFeatherDesc,
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+      //  .effect = gItemEffect_SpdefMochi,
+      //  .flingPower = 30,
+      //  .iconPic = gItemIcon_Mochi,
+      //  .iconPalette = gItemIconPalette_CleverMochi,
+    //},
 
-    [ITEM_SWIFT_MOCHI] =
-    {
-        .name = _("Swift Mochi"),
-        .pluralName = _("Swift Mochi"),
-        .price = 500,
-        .description = sSwiftFeatherDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .effect = gItemEffect_SpeedMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_SwiftMochi,
-    },
+    //[ITEM_SWIFT_MOCHI] =
+   // {
+     //   .name = _("Swift Mochi"),
+     //   .pluralName = _("Swift Mochi"),
+     //   .price = 500,
+     //   .description = sSwiftFeatherDesc,
+     //   .pocket = POCKET_ITEMS,
+     //   .type = ITEM_USE_PARTY_MENU,
+     //   .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+     //   .effect = gItemEffect_SpeedMochi,
+     //   .flingPower = 30,
+      //  .iconPic = gItemIcon_Mochi,
+     //   .iconPalette = gItemIconPalette_SwiftMochi,
+    //},
 
-    [ITEM_FRESH_START_MOCHI] =
-    {
-        .name = _("Fresh Start Mochi"),
-        .pluralName = _("Fresh Start Mochi"),
-        .price = 300,
-        .description = COMPOUND_STRING(
-            "An item that resets\n"
-            "all base points of\n"
-            "a Pokémon."),
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_ResetEVs,
-        .effect = gItemEffect_ResetMochi,
-        .flingPower = 30,
-        .iconPic = gItemIcon_Mochi,
-        .iconPalette = gItemIconPalette_FreshStartMochi,
-    },
+    //[ITEM_FRESH_START_MOCHI] =
+    //{
+      //  .name = _("Fresh Start Mochi"),
+      //  .pluralName = _("Fresh Start Mochi"),
+      //  .price = 300,
+      //  .description = COMPOUND_STRING(
+       //     "An item that resets\n"
+       //     "all base points of\n"
+       //     "a Pokémon."),
+      //  .pocket = POCKET_ITEMS,
+      //  .type = ITEM_USE_PARTY_MENU,
+      //  .fieldUseFunc = ItemUseOutOfBattle_ResetEVs,
+      //  .effect = gItemEffect_ResetMochi,
+      //  .flingPower = 30,
+      //  .iconPic = gItemIcon_Mochi,
+      //  .iconPalette = gItemIconPalette_FreshStartMochi,
+    //},
 
     [ITEM_GLIMMERING_CHARM] =
     {

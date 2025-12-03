@@ -12062,9 +12062,62 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Ralts
+Kirlia
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+=== TRAINER_WALLY_MOSSDEEP ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer 
+
+Whiscash @ Sitrus Berry  
+Ability: Oblivious  
+Level: 37  
+Tera Type: Water  
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe  
+- Surf  
+- Waterfall  
+- Ice Beam  
+- Mud-Slap  
+
+Sableye @ Shell Bell  
+Ability: Keen Eye  
+Level: 36  
+Tera Type: Dark  
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe  
+- Night Shade  
+- Night Slash  
+- Shadow Ball  
+- Confuse Ray  
+
+Gardevoir (F) @ Leftovers  
+Ability: Synchronize  
+Level: 40  
+Tera Type: Psychic  
+EVs: 128 Def / 128 SpA / 252 Spe  
+Modest Nature  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe  
+- Psybeam  
+- Dazzling Gleam  
+- Shadow Ball  
+- Thunderbolt  
+
+Gallade @ Black Belt  
+Ability: Steadfast  
+Level: 40  
+Tera Type: Psychic  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe  
+- Aura Sphere  
+- Earthquake  
+- Psychic  
+- X-Scissor  
+
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY

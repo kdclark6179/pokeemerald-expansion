@@ -37,6 +37,7 @@ PetalburgCity_EventScript_WallyTutorial::
 	waitmovement 0
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
+	special LoadPlayerParty
 	fadescreen FADE_FROM_BLACK
 	waitstate
 	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT

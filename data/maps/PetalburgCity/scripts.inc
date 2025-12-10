@@ -25,7 +25,61 @@ PetalburgCity_EventScript_SetGymDoorsUnlocked::
 	return
 
 PetalburgCity_OnFrame:
-	
+	map_script_2 VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_WallyTutorial
+	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_WalkToWallyHouse
+	.2byte 0
+
+PetalburgCity_EventScript_WallyTutorial::
+	lockall
+	special SavePlayerParty
+	applymovement LOCALID_PETALBURG_WALLY, PetalburgCity_Movement_WallyTutorialWally
+	applymovement LOCALID_PLAYER, PetalburgCity_Movement_WallyTutorialPlayer
+	waitmovement 0
+	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special LoadPlayerParty
+	fadescreen FADE_FROM_BLACK
+	waitstate
+	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT
+	applymovement LOCALID_PETALBURG_WALLY, Common_Movement_WalkInPlaceFasterLeft, MAP_PETALBURG_CITY
+	waitmovement LOCALID_PETALBURG_WALLY, MAP_PETALBURG_CITY
+	msgbox Route102_Text_LetsGoBack, MSGBOX_DEFAULT
+	closemessage
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	setvar VAR_PETALBURG_CITY_STATE, 3
+	fadedefaultbgm
+	clearflag FLAG_DONT_TRANSITION_MUSIC
+	special LoadPlayerParty
+	setvar VAR_PETALBURG_GYM_STATE, 1
+	warp MAP_PETALBURG_CITY_GYM, 4, 108
+	waitstate
+	releaseall
+	end
+
+PetalburgCity_EventScript_WalkToWallyHouse::
+	lockall
+	setflag FLAG_HIDE_MAP_NAME_POPUP
+	applymovement LOCALID_PETALBURG_WALLYS_DAD, PetalburgCity_Movement_WalkToWallyHouseWallysDad
+	applymovement LOCALID_PLAYER, PetalburgCity_Movement_WalkToWallyHousePlayer
+	waitmovement 0
+	setvar VAR_0x8004, 7
+	setvar VAR_0x8005, 5
+	opendoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	applymovement LOCALID_PETALBURG_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
+	applymovement LOCALID_PLAYER, PetalburgCity_Movement_WalkInsideHousePlayer
+	waitmovement 0
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
+	hideobjectat LOCALID_PLAYER, MAP_PETALBURG_CITY
+	closedoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	fadedefaultbgm
+	clearflag FLAG_DONT_TRANSITION_MUSIC
+	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 2, 4
+	waitstate
+	releaseall
+	end
 
 PetalburgCity_EventScript_Boy::
 	lock

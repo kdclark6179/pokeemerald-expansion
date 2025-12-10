@@ -69,11 +69,6 @@ PetalburgCity_Gym_EventScript_TurnPlayerNorth::
 	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
-PetalburgCity_Gym_OnFrame:
-	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_SkipWallyTutorial
-	.2byte 0
-
-
 SkipWallyTutorial:
 	addobject LOCALID_PETALBURG_GYM_WALLY
 	playse SE_DOOR
@@ -116,7 +111,7 @@ TEXT_WALLY_CHALLENGE:
 	.string "Hey, why not now {PLAYER}?\n"
 	.string "I want to show you what I can do! $"
 
-TEXT NORMAN_NO:
+TEXT_NORMAN_NO:
 	.string "Not here, not now Wally.\n"
 	.string "You both need to train more and\l"
 	.string "grow stronger. And when you do,\l"
@@ -152,22 +147,22 @@ PetalburgCity_Gym_EventScript_Norman::
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth::
 	setvar VAR_0x8008, 0
-	goto PetalburgCity_Gym_EventScript_SkipWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
 	end
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth::
 	setvar VAR_0x8008, 1
-	goto PetalburgCity_Gym_EventScript_SkipWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
 	end
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorialWest::
 	setvar VAR_0x8008, 2
-	goto PetalburgCity_Gym_EventScript_SkipWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
 	end
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorialEast::
 	setvar VAR_0x8008, 3
-	goto PetalburgCity_Gym_EventScript_SkipWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
 	end
 
 PetalburgCity_Gym_EventScript_WallyArriveSouth::

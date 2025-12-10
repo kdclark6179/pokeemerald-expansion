@@ -84,7 +84,7 @@ PetalburgCity_Gym_EventScript_SkipWallyTutorial:
 	lock
 	msgbox TEXT_WALLY, MSGBOX_DEFAULT
 	msgbox TEXT_NORMAN, MSGBOX_DEFAULT
-	applymovement 1, WALLY_MOVE
+	applymovement 10, WALLY_MOVE
 	faceplayer
 	msgbox TEXT_WALLY_CHALLENGE, MSGBOX_DEFAULT
 	msgbox TEXT_NORMAN_NO, MSGBOX_DEFAULT
@@ -96,7 +96,7 @@ PetalburgCity_Gym_EventScript_SkipWallyTutorial:
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	applymovement 2, WALLY_EXIT
+	applymovement 10, WALLY_EXIT
 	removeobject 10
 	releaseall
 	end
@@ -128,15 +128,15 @@ TEXT_NORMAN_NO:
 
 WALLY_MOVE:
 	walk_down
-	return
-
+	step_end
+	
 WALLY_EXIT:
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	walk_down
-	return
+	step_end
 
 PetalburgCity_Gym_EventScript_Norman::
 	lock

@@ -69,6 +69,10 @@ PetalburgCity_Gym_EventScript_TurnPlayerNorth::
 	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
+PetalburgCity_Gym_OnFrame:
+	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
+	.2byte 0
+
 SkipWallyTutorial:
 	addobject LOCALID_PETALBURG_GYM_WALLY
 	playse SE_DOOR
@@ -183,6 +187,31 @@ PetalburgCity_Gym_EventScript_WallyArriveWestEast::
 	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyArrive
+	waitmovement 0
+	return
+
+PetalburgCity_Gym_EventScript_ExitGymWithWallySouth::
+	applymovement LOCALID_PETALBURG_GYM_NORMAN, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
+	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallySouth
+	waitmovement 0
+	return
+
+PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth::
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
+	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth
+	waitmovement 0
+	return
+
+PetalburgCity_Gym_EventScript_ExitGymWithWallyWest::
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
+	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyWest
+	waitmovement 0
+	return
+
+PetalburgCity_Gym_EventScript_ExitGymWithWallyEast::
+	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
+	applymovement LOCALID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyEast
 	waitmovement 0
 	return
 

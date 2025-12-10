@@ -77,14 +77,11 @@ PetalburgCity_Gym_OnFrame:
 PetalburgCity_Gym_EventScript_SkipWallyTutorial:
 	addobject LOCALID_PETALBURG_GYM_WALLY
 	playse SE_DOOR
-	call_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_WallyArriveSouth
-	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallyArriveNorth
-	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallyArriveWestEast
-	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyArriveWestEast
 	lock
 	msgbox TEXT_WALLY, MSGBOX_DEFAULT
 	msgbox TEXT_NORMAN, MSGBOX_DEFAULT
 	applymovement 10, WALLY_MOVE
+	waitmovement
 	faceplayer
 	msgbox TEXT_WALLY_CHALLENGE, MSGBOX_DEFAULT
 	msgbox TEXT_NORMAN_NO, MSGBOX_DEFAULT
@@ -96,8 +93,10 @@ PetalburgCity_Gym_EventScript_SkipWallyTutorial:
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	setvar VAR_PETALBURG_CITY_STATE 3
 	applymovement 10, WALLY_EXIT
-	removeobject 10
+	waitmovement
+	removeobject LOCALID_PETALBURG_GYM_WALLY
 	releaseall
 	end
 
@@ -129,7 +128,7 @@ TEXT_NORMAN_NO:
 WALLY_MOVE:
 	walk_down
 	step_end
-	
+
 WALLY_EXIT:
 	walk_down
 	walk_down

@@ -69,6 +69,10 @@ PetalburgCity_Gym_EventScript_TurnPlayerNorth::
 	turnobject LOCALID_PLAYER, DIR_NORTH
 	end
 
+PetalburgCity_Gym_OnFrame:
+	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
+	.2byte 0
+
 SkipWallyTutorial:
 	addobject LOCALID_PETALBURG_GYM_WALLY
 	playse SE_DOOR

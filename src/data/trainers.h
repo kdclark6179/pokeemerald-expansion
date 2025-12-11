@@ -5179,7 +5179,7 @@ F_TRAINER_FEMALE |
 #line 2128
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 2127
-            .lvl = 8,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -30289,7 +30289,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12065
-            .species = SPECIES_KIRLIA,
+            .species = SPECIES_RALTS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12067
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),

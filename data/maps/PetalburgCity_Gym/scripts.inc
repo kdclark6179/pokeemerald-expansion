@@ -83,8 +83,8 @@ SkipWallyTutorial:
 	lock
 	msgbox TEXT_WALLY, MSGBOX_DEFAULT
 	msgbox TEXT_NORMAN, MSGBOX_DEFAULT
-	msgbox TEXT_WALLY_CHALLENGE, MSGBOX_DEFAULT
-	msgbox TEXT_NORMAN_NO, MSGBOX_DEFAULT
+	msgbox TEXT_WALLY_CHALLENGE, MSGBOX, DEFAULT
+	msgbox TEXT_NORMAN_NO
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
 	setvar VAR_PETALBURG_GYM_STATE, 1
 	setvar VAR_PETALBURG_CITY_STATE, 2
@@ -119,7 +119,7 @@ TEXT_WALLY_CHALLENGE:
 	.string "Hey, why not now {PLAYER}?\n"
 	.string "I want to show you what I can do! $"
 
-TEXT_NORMAN_NO:
+TEXT NORMAN_NO:
 	.string "Not here, not now Wally.\n"
 	.string "You both need to train more and\l"
 	.string "grow stronger. And when you do,\l"

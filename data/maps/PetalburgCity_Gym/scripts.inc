@@ -73,16 +73,26 @@ PetalburgCity_Gym_OnFrame:
 	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
 	.2byte 0
 
-PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
-	lockall
-	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	applymovement LOCALID_PETALBURG_GYM_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
-	waitmovement 0
-	playse SE_EXIT
-	removeobject LOCALID_PETALBURG_GYM_WALLY
+
+SkipWallyTutorial:
+	addobject LOCALID_PETALBURG_GYM_WALLY
+	playse SE_DOOR
+	call_if_eq VAR_0x8008, 0, PetalburgCity_Gym_EventScript_WallyArriveSouth
+	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallyArriveNorth
+	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallyArriveWestEast
+	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyArriveWestEast
+	lock
+	msgbox TEXT_WALLY, MSGBOX_DEFAULT
+	msgbox TEXT_NORMAN, MSGBOX_DEFAULT
+	msgbox TEXT_WALLY_CHALLENGE, MSGBOX_DEFAULT
+	msgbox TEXT_NORMAN_NO, MSGBOX_DEFAULT
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
+	setvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_PETALBURG_CITY_STATE, 2
+	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
+	special InitBirchState
 	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
 	delay 30
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
@@ -91,6 +101,31 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	releaseall
 	end
+
+TEXT_WALLY: 
+	.string "Norman! Norman!\n"
+	.string "I caught a Ralts! Thank you so much for\l"
+	.string "lending me your Zigzagoon.\p"
+	.string "I'm a real trainer now! $"
+
+TEXT_NORMAN:
+	.string "Good job Wally.\n"
+	.string "You will make a good trainer someday\l"
+	.string "But you have a long way to go.\p"
+	.string "Oh, have you met my child, {PLAYER}?\p"
+	.string "Who knows, perhaps someday the two of you\n"
+	.string "will have a chance to battle! $"
+
+TEXT_WALLY_CHALLENGE:
+	.string "Hey, why not now {PLAYER}?\n"
+	.string "I want to show you what I can do! $"
+
+TEXT NORMAN_NO:
+	.string "Not here, not now Wally.\n"
+	.string "You both need to train more and\l"
+	.string "grow stronger. And when you do,\l"
+	.string "you should come back here to\l"
+	.string "measure your progress. $"
 
 PetalburgCity_Gym_Movement_WallyExitGym:
 	walk_down

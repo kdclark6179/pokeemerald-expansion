@@ -101,6 +101,8 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	playse SE_UNLOCK
 	call MauvilleCity_Gym_EventScript_GiveShockWave
 	closemessage
+	call MauvilleCity_Gym_EventScript_GiveMareep
+	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox MauvilleCity_Gym_Text_RegisteredWattson, MSGBOX_DEFAULT
@@ -125,6 +127,52 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 	msgbox MauvilleCity_Gym_Text_ExplainShockWave, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
 	return
+
+MauvilleCity_Gym_EventScript_GiveMareep::
+	lockall
+	goto_if_set FLAG_UNUSED_0x068, MauvilleCity_Gym_EventScript_Wattson
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq MauvilleCity_Gym_EventScript_PartyFull
+	givemon SPECIES_MAREEP, 5, ITEM_MAGNET
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox MauvilleCity_Gym_Text_ReceivedMareep, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x068
+	release
+	end
+
+MauvilleCity_Gym_EventScript_PartyFull::
+	lock
+	msgbox MauvilleCity_Gym_Text_PartyFull, MSGBOX_DEFAULT
+	givemon SPECIES_MAREEP, 5, ITEM_MAGNET
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	setflag FLAG_UNUSED_0x068
+	release
+	end
+
+MauvilleCity_Gym_Text_ReceivedMareep::
+.string "WATTSON: You have really impressed me!\n"
+.string "I went to Johto recently\l"
+.string "and I want you to have a gift\l":
+.string "Pokemon from the region!\p"
+.string "{PLAYER} received Mareep from\l"
+.string" "Gym Leader Wattson!$"
+
+MauvilleCity_Gym_Text_PartyFull::
+.string "WATTSON: You have really impressed me!\n"
+.string "I went to Johto recently\l"
+.string "and I want you to have a gift\l":
+.string "Pokemon from the region!\p"
+.string "{PLAYER} received Mareep from\l"
+.string" "Gym Leader Wattson!\p"
+.string "WATTSON: Oh, your party\n"
+.string "is full.  I will send it\l"
+.string "to your box in the PC.$"
+
+
+
 
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
 	msgbox MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor, MSGBOX_DEFAULT

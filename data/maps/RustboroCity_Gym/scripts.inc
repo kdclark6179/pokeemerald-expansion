@@ -30,8 +30,56 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
+	goto RustboroCity_Gym_EventScript_GiveShuckle
+	end
+
+RustboroCity_Gym_EventScript_GiveShuckle::
+	lockall
+	goto_if_set FLAG_UNUSED_0x054  RustboroCity_Gym_EventScript_Roxanne
+	getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq RustboroCity_Gym_EventScript_PartyFull
+	givemon SPECIES_SHUCKLE, 5, ITEM_HARD_STONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox RustboroCity_Gym_Text_Shuckle, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_UNUSED_0x054
 	release
 	end
+
+RustboroCity_Gym_EventScript_PartyFull::
+	lock
+	msgbox RustboroCity_Gym_Text_PartyFull, MSGBOX_DEFAULT
+	givemon SPECIES_SHUCKLE, 5 ,ITEM_HARD_STONE
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	setflag FLAG_UNUSED_0x054
+	release
+	end
+
+RustboroCity_Gym_Text_Shuckle::
+	.string "ROXANNE: When the Pokemon League\n"
+	.string "appointed me Gym Leader,\l"
+	.string "they told me to give this to a\l"
+	.string "promising trainer./p"
+	.string "I think you will go far, so\n"
+	.string "take this SHUCKLE as a gift.\p"
+	.string "{PLAYER} received SHUCKLE from\n"
+	.string "Gym Leader Roxanne!$"
+
+RustboroCity_Gym_Text_PartyFull::
+	.string "ROXANNE: When the Pokemon League\n"
+	.string "appointed me Gym Leader,\l"
+	.string "they told me to give this to a\l"
+	.string "promising trainer./p"
+	.string "I think you will go far, so\n"
+	.string "take this SHUCKLE as a gift.\p"
+	.string "Oh. . .\n"
+	.string "Your party is full, but\l"
+	.string "that's ok. I will send it to\l"
+	.string "your box.\p"
+	.string ".string "{PLAYER} received SHUCKLE from\n"
+	.string "Gym Leader Roxanne!\$"
 
 RustboroCity_Gym_EventScript_RoxanneRematch::
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons

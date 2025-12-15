@@ -155,15 +155,15 @@ MauvilleCity_Gym_EventScript_PartyFull::
 MauvilleCity_Gym_Text_ReceivedMareep::
 .string "WATTSON: You have really impressed me!\n"
 .string "I went to Johto recently\l"
-.string "and I want you to have a gift\l":
+.string "and I want you to have a gift\l"
 .string "Pokemon from the region!\p"
 .string "{PLAYER} received Mareep from\l"
-.string" "Gym Leader Wattson!$"
+.string "Gym Leader Wattson!$"
 
 MauvilleCity_Gym_Text_PartyFull::
 .string "WATTSON: You have really impressed me!\n"
 .string "I went to Johto recently\l"
-.string "and I want you to have a gift\l":
+.string "and I want you to have a gift\l"
 .string "Pokemon from the region!\p"
 .string "{PLAYER} received Mareep from\l"
 .string" "Gym Leader Wattson!\p"

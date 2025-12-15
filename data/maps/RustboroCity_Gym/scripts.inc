@@ -78,8 +78,8 @@ RustboroCity_Gym_Text_PartyFull::
 	.string "Your party is full, but\l"
 	.string "that's ok. I will send it to\l"
 	.string "your box.\p"
-	.string ".string "{PLAYER} received SHUCKLE from\n"
-	.string "Gym Leader Roxanne!\$"
+	.string "{PLAYER} received SHUCKLE from\n"
+	.string "Gym Leader Roxanne!$"
 
 RustboroCity_Gym_EventScript_RoxanneRematch::
 	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons

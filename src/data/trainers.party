@@ -8861,13 +8861,15 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Beautifly  
+Level: 10
 Ability: Swarm  
 - Tackle  
 - Harden  
 - Absorb  
 - String Shot
 
-Dustox  
+Dustox
+Level: 10
 Ability: Shield Dust  
 - Poison Sting  
 - Confusion  

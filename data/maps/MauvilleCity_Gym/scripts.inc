@@ -166,7 +166,7 @@ MauvilleCity_Gym_Text_PartyFull::
 .string "and I want you to have a gift\l"
 .string "Pokemon from the region!\p"
 .string "{PLAYER} received Mareep from\l"
-.string" "Gym Leader Wattson!\p"
+.string "Gym Leader Wattson!\p"
 .string "WATTSON: Oh, your party\n"
 .string "is full.  I will send it\l"
 .string "to your box in the PC.$"
